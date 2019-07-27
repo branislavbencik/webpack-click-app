@@ -1,11 +1,8 @@
 import React from "react";
+import "./Heading.scss";
 
 export const Heading = () => {
-  return (
-    <div className="Heading">
-      <h1 className="HeadingText">STFUANDCLICK.COM</h1>
-    </div>
-  );
+  return <h1 className="HeadingText">STFUANDCLICK.COM</h1>;
 };
 
 export const Quote = () => {

@@ -1,0 +1,30 @@
+.HeadingText {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  background-color: #4990e2;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+
+.Quote {
+  margin: 0 auto;
+  width: 60%;
+  padding: 40px;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+
+  &Text {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  &Author {
+    text-align: right;
+    padding-right: 180px;
+  }
+}

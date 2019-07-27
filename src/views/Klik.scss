@@ -1,0 +1,21 @@
+.MainContainer {
+  width: 50%;
+  margin: 0 auto;
+  border: 5px solid #4990e2;
+  border-radius: 10px;
+  background-color: white;
+
+  .ClickButton {
+    background-color: #4990e2;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+    border-radius: 10px;
+    outline: none;
+    display: block;
+    width: 90%;
+    padding: 30px;
+    margin: 25px auto;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import "./ClickingForTeam.scss";
 
 class KlikHeading extends Component<any, {}> {
   render() {

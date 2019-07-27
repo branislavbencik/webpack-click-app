@@ -1,0 +1,36 @@
+.Table {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-size: 18px;
+  line-height: 50px;
+
+  .FirstColumn {
+    text-align: center;
+    padding: 0 10px 0 10px;
+  }
+
+  .ThirdColumn {
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  thead {
+    font-size: 12px;
+
+    th {
+      background-color: white;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: #ecf3fd;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #dce9f9;
+  }
+}

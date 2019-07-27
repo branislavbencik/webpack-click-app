@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actionCreators from "../actions/actions";
+import "./Table.scss";
 
 class Table extends Component<any, {}> {
   renderTable = () =>
@@ -19,7 +20,7 @@ class Table extends Component<any, {}> {
       <div>
         <table cellSpacing="0" cellPadding="0" className="Table">
           <thead>
-            <tr className="TableHeading">
+            <tr>
               <th className="FirstColumn" />
               <th>TEAM</th>
               <th className="ThirdColumn">CLICKS</th>

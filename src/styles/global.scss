@@ -1,0 +1,23 @@
+html {
+  background-color: #f1f1f1;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+}
+
+input {
+  margin: 10px 0px 0px 0px;
+  padding: 5px 8px;
+  line-height: 30px;
+  border-radius: 10px;
+  border: solid 0.5px grey;
+  font-size: 15px;
+  outline: none;
+}
+
+::placeholder {
+  opacity: 0.5;
+}

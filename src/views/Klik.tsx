@@ -6,6 +6,7 @@ import { TableFooter, Footer } from "../components/Footer";
 import * as actionCreators from "../actions/actions";
 import { connect } from "react-redux";
 import Clicks from "../components/Clicks";
+import "./Klik.scss";
 
 class Klik extends Component<any, {}> {
   handleClick = () => {
@@ -20,11 +21,11 @@ class Klik extends Component<any, {}> {
 
   render() {
     return (
-      <div className="Klik">
+      <>
         <Heading />
         <ClickingForTeam />
         <div className="MainContainer">
-          <div className="FlexWrapper">
+          <div>
             <button
               className="ClickButton"
               type="submit"
@@ -38,7 +39,7 @@ class Klik extends Component<any, {}> {
           <TableFooter />
         </div>
         <Footer />
-      </div>
+      </>
     );
   }
 }

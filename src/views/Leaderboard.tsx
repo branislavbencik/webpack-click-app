@@ -5,6 +5,7 @@ import Table from "../components/Table";
 import { connect } from "react-redux";
 import * as actionCreators from "../actions/actions";
 import { TableFooter, Footer } from "../components/Footer";
+import "./Leaderboard.scss";
 
 interface LeaderboardState {
   team: string;

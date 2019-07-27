@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import React, { Component } from "react";
+import "./Clicks.scss";
 
 class Clicks extends Component<any, {}> {
   private updateTeamClicks = (teams: any, sessions: any, team_clicks: {}) => {
@@ -20,7 +21,7 @@ class Clicks extends Component<any, {}> {
   render() {
     const { teams, sessions, your_clicks, team_clicks } = this.props;
     return (
-      <div className="ClicksWrapper">
+      <div className="Clicks">
         <div className="ClicksTextBox">
           <p className="ClicksText">Your Clicks:</p>
           <p className="ClicksNumber">
