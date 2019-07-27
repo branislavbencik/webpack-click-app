@@ -1,8 +1,13 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/index.jsx",
+  entry: {
+    app: ["./src/index.tsx", "webpack-hot-middleware/client"],
+    vendor: ["react", "react-dom"]
+  },
+  devtool: "source-map",
   module: {
     rules: [
       {
@@ -24,7 +29,12 @@ module.exports = {
       {
         test: /\.(css|scss)$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
-      }
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        loader: "ts-loader"
+      },
+      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
   },
   resolve: {
@@ -38,6 +48,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ]
 };
