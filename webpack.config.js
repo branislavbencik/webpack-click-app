@@ -1,10 +1,9 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-webpack = require("webpack");
 
 module.exports = {
   entry: {
-    app: ["./src/index.tsx", "webpack-hot-middleware/client"],
+    app: ["./src/index.tsx"],
     vendor: ["react", "react-dom"]
   },
   devtool: "source-map",
@@ -47,13 +46,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
+      template: "./public/index.html",
       filename: "./index.html"
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
-    }),
-    new webpack.HotModuleReplacementPlugin()
+    })
   ]
 };

@@ -4,7 +4,7 @@ import { App } from "./components/App";
 import "./styles/styles.css";
 import "./styles/styles-reset.css";
 import * as serviceWorker from "./serviceWorker";
-import { createStore, applyMiddleware, combineReducers } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import { composeWithDevTools } from "redux-devtools-extension";
