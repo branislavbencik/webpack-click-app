@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { Heading, Quote } from "./Heading";
+import { Heading, Quote } from "../components/Heading";
 import img from "../top10clickers.png";
-import Table from "./Table";
+import Table from "../components/Table";
 import { connect } from "react-redux";
 import * as actionCreators from "../actions/actions";
-import { TableFooter, Footer } from "./Footer";
+import { TableFooter, Footer } from "../components/Footer";
 
 interface LeaderboardState {
   team: string;

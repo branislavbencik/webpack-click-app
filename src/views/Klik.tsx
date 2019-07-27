@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Heading } from "./Heading";
-import ClickingForTeam from "./ClickingForTeam";
-import Table from "./Table";
-import { TableFooter, Footer } from "./Footer";
+import { Heading } from "../components/Heading";
+import ClickingForTeam from "../components/ClickingForTeam";
+import Table from "../components/Table";
+import { TableFooter, Footer } from "../components/Footer";
 import * as actionCreators from "../actions/actions";
 import { connect } from "react-redux";
-import Clicks from "./Clicks";
+import Clicks from "../components/Clicks";
 
 class Klik extends Component<any, {}> {
   handleClick = () => {

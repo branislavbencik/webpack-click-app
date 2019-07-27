@@ -1,6 +1,6 @@
 import React from "react";
-import Leaderboard from "./Leaderboard";
-import Klik from "./Klik";
+import Leaderboard from "./views/Leaderboard";
+import Klik from "./views/Klik";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 export const App = () => {
